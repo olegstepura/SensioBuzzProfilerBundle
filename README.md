@@ -1,25 +1,18 @@
 OstSensioBuzzProfilerBundle
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+===========================
 
 Bundle to connect [sensio/buzz-bundle][1] with [juliendidier/buzz-profiler-bundle][2] to support prifiling default buzz client
 
 Installation
 ------------
 
-Clone the bundle:
+Add to `composer.json` at `require` section:
 
-``` bash
-git clone
+``` json
+    "olegstepura/sensio-buzz-profiler-bundle": "dev-master",
 ```
 
-Install it with composer:
-
-``` bash
-curl -s http://getcomposer.org/installer | php
-php composer.phar update
-```
-
-And enable the bundle in the kernel after `SensioBuzzBundle` before `BuzzProfilerBundle`:
+Install it with composer, and enable the bundle in the kernel after `SensioBuzzBundle` before `BuzzProfilerBundle`:
 
 ``` php
 <?php
@@ -36,5 +29,5 @@ public function registerBundles()
 }
 ```
 
-[1] https://github.com/sensio/SensioBuzzBundle
-[2] https://github.com/juliendidier/BuzzProfilerBundle
+[1]: https://github.com/sensio/SensioBuzzBundle
+[2]: https://github.com/juliendidier/BuzzProfilerBundle
